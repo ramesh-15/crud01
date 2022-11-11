@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+</head>
+<body>
+<center>
+<form method="POST" action="update/{{employee.id}}">
+    {% csrf_token %}
+    <div>
+        <br>
+        <p>
+        <h1>Update details</h1>
+        </p>
+    </div>
+
+     <div>
+
+        <p>Employee Id</p>
+        <div>
+            <input type="number" name="id" >
+        </div>
+    </div>
+
+       <div>
+
+        <p>Employee Name</p>
+        <div>
+            <input type="text" name="name" >
+        </div>
+    </div>
+
+       <div>
+
+        <p>Employee Email</p>
+        <div>
+            <input type="email" name="email">
+        </div>
+    </div>
+
+       <div>
+
+        <p>Employee Contact</p>
+        <div>
+            <input type="text" name="contact" >
+        </div>
+    </div>
+       <div>
+
+        <br>
+        <div>
+            <button type="submit">Update</button>
+        </div>
+    </div>
+</form>
+</center>
+</body>
+</html>
